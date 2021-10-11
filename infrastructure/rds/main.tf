@@ -1,6 +1,6 @@
 provider "aws" {
   profile = var.profile
-  region = "us=west-1"
+  region = "us-west-1"
 }
 
 resource "aws_db_instance" "default" {
@@ -13,6 +13,6 @@ resource "aws_db_instance" "default" {
 	password            = var.password
 	identifier          = var.id
 	vpc_security_group_ids = ["sg-0517393a0e657b868"]
-	pubicly_accessible = true
-	}
+	publicly_accessible = true
+}
 
