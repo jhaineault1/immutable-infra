@@ -7,6 +7,7 @@ resource "aws_db_instance" "default" {
   allocated_storage   = 20 #free tier
 	storage_type        = "gp2" #general purpose ssd
 	engine              = "postgres"
+	engine_version      = "12"
 	instance_class      = "db.t2.micro"
 	name                = "contacts_db"
 	username            = "postgres"
